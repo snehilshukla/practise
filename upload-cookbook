@@ -1,0 +1,22 @@
+Upload Cookbook From Chef-Workstation to Chef-Server:-
+
+1)Go to WS Machine.
+2)To check and go inside "chef-repo"
+       ls
+       cd chef-repo
+3)To upload cookbook from WS to chef-server.
+       knife cookbook upload aparche-cookbook
+4)To see list of cookbook which are present in chef-server
+       knife cookbook list
+5)To make it ready manually, a recipe to upload to node
+       knife node run_list set node1 "recipe[apache-cookbook::apache-recipe]"
+6)To check node
+       knife node show node1
+7)Chef-client pull a recipe from server manually
+     1) Go to Node Machine
+     2) chef-client
+8)Chef-client pull a recipe from server automatically
+     1)Go to Node Machine
+     2)vi   /etc/crontab
+text=>   * * * * * root chef-client
+
