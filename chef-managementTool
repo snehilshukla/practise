@@ -1,0 +1,33 @@
+Configuration Management Tool:
+
+1)It is a method through which we automate admin tasks.
+2)CM tools turns your code into infrastructure ie IaC.
+3)So your code would be repeatable,testable and versionable
+
+Advantage Of CM Tool:                      
+                                          
+1) Complete Automation                 
+2) Increase uptimes                   
+3) Improve performance               
+4) Ensure compliance                  
+5) Prevent error            
+6) Reduce cost                      
+
+Type of CM Tool:
+1)Push Based Tool
+2)Pull Based Tool.
+
+1)Push Based Tool:   The main sever that start communication and send configuration data the nodes,without the nodes asking for it.
+
+Push Configuration tool server         Node1
+                                       Node2
+                                       Node3
+
+2)Pull Based Tool:   The nodes pull the configuration information from the main serv                     -er.
+                     A small s/w(called client) is installed on every node.This clie                     -nt will be:
+                         a) At regular interval get configuration from the server.
+                         b) Compare the configuration recevied from the server with                             current configuration of the nodes.
+                         c) If there is any mis-match take step,required to match th                            -e configuration of the nodes with configuration receive                            -d from the server.
+                         d)This means that, its always client that initates communic                           -ation,not the main server.
+Example of Pull Based Tool:      Chef and Puppet
+  
